@@ -14,8 +14,16 @@
     <fragment
         android:id="@+id/searchFragment"
         android:name="ru.itis.homework2.SearchFragment"
-        android:label="Search"
-        tools:layout="@layout/fragment_search" />
+        android:label="Search">
+        <action
+            android:id="@+id/action_searchFragment_to_bookDetailFragment"
+            app:destination="@id/bookFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookFragment"
+        android:name="ru.itis.homework2.BookFragment"
+        android:label="Details" />
 
     <fragment
         android:id="@+id/settingsFragment"
